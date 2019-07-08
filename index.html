@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div id="form-outer">
+        <p id="description">
+            Let us know how we can improve freeCodeCamp
+        </p>
+        <form class="grid">
+            <p> <label id="name-label" for="name">* Name: </label>
+            </p>
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name"
+                required>
+
+
+            <p>
+                <label id="email-label" for="email">* Email: </label>
+            </p>
+
+            <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+
+
+            <p>
+                <label id="number-label" for="age">* Age: </label>
+            </p>
+
+            <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+
+            <p>
+                <label for="currentPos">Which option best describes your current role?</label>
+            </p>
+
+            <select id="dropdown" name="currentPos" class="dropdown">
+                <option disabled value>Select an option</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+
+            <p>
+                <label for="userRating">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+            </p>
+
+
+            <ul style="list-style: none; text-align: left;">
+                <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="userRatings"></label>Definitely</li>
+                <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="userRatings"></label>Maybe</li>
+                <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="userRatings"></label>Not
+                    sure</li>
+            </ul>
+
+            <p>
+                <label for="most-like">What do you like most in FCC: </label>
+            </p>
+
+
+            <select id="most-like" name="mostLike" class="dropdown">
+                <option disabled selected value>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="openSource">Open Source</option>
+            </select>
+            <p>
+                <label for="preferences">Things that should be improved in the future<br>(Check all that apply):
+                </label>
+            </p>
+
+            <ul id="preferences" style="list-style: none; text-align: left;">
+                <li class="checkbox"><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end
+                    <label>Projects</label></li>
+                <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end
+                    Projects</li>
+                <li class="checkbox"><input name="prefer" value="3" type="checkbox" class="userRatings">Data
+                    <label>Visualization</label></li>
+                <li class="checkbox"><input name="prefer" value="4" type="checkbox" class="userRatings">Challenges</label></li>
+                <li class="checkbox"><input name="prefer" value="5" type="checkbox" class="userRatings">Open
+                    <label>Source Community</label></li>
+                <li class="checkbox"><input name="prefer" value="6" type="checkbox" class="userRatings">Gitter
+                    <label>help rooms</label></li>
+                <li class="checkbox"><input name="prefer" value="7" type="checkbox" class="userRatings">Videos</label></li>
+                <li class="checkbox"><input name="prefer" value="8" type="checkbox" class="userRatings">City
+                    <label>Meetups</label></li>
+                <li class="checkbox"><input name="prefer" value="9" type="checkbox" class="userRatings">Wiki</label></li>
+                <li class="checkbox"><input name="prefer" value="10" type="checkbox" class="userRatings">Forum</label></li>
+                <li class="checkbox"><input name="prefer" value="10" type="checkbox" class="userRatings">Additional
+                    <label>Courses</label></li>
+            </ul>
+            <p>
+                <label for="comments">Any Comments or Suggestions?</label>
+            </p>
+
+            <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

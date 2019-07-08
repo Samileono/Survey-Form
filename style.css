@@ -1,0 +1,57 @@
+html,
+body {
+  background-color: #a9d7d1;
+  text-align: center;
+  font-family: "Raleway", Helvetica, sans-serif;
+  min-width: 320px;
+}
+
+header {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px;
+}
+
+#form-outer {
+  background-color: rgb(250, 250, 250);
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+  /* padding: 10px;
+  padding-top: 20px; */
+  padding: 20px 100px 10px 100px;
+}
+
+#form-outer .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+#form-outer .grid p {
+  text-align: right;
+  margin: 0px 0px;
+}
+
+#form-outer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#form-outer .grid input,
+select {
+  text-align: left;
+  padding: 1em;
+  margin: 5px 0px;
+}
+
+#form-outer input[type="checkbox"] {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+#form-outer form button {
+}
